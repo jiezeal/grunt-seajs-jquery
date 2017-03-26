@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8" />
+	<title>Grunt+Seajs构建项目</title>
+	<link rel="stylesheet" href="dist/css/main.min.css" />
+	<link rel="stylesheet" href="dist/css/tabTag.min.css" />
+	<script src="lib/sea.js"></script>
+	<script>
+		// 加载入口模块
+		seajs.use("./dist/js/tabTag");
+	</script>
+</head>
+<body>
+	<div id="tab">
+		<ul class="title">
+			<li class="currentClass">HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+		</ul>
+
+		<div class="content">
+			<div class="show">HTML</div>
+			<div>CSS</div>
+			<div>JavaScript</div>
+		</div>
+	</div>
+</body>
+</html>

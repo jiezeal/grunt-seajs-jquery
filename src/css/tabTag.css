@@ -1,0 +1,29 @@
+/*-------------------------------------------------------------------
+tabTag.css 标签页样式
+-------------------------------------------------------------------*/
+
+#tab{ margin: 100px; }
+.title{  overflow: hidden; zoom: 1; }
+.title li{
+	float: left;
+	padding: 5px 20px;
+	border: 1px solid #369;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 3px;
+	cursor: pointer;
+}
+.title li.currentClass{ background-color: #369; color: #FFF; }
+.content{
+	margin-top: 10px;
+}
+.content div{
+	width: 500px;
+	height: 300px;
+	border: 1px solid #369;
+	display: none;
+	padding: 10px;
+}
+.content .show{
+	display: block;
+}

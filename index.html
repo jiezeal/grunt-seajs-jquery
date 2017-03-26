@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8" />
+	<title>Grunt+Seajs构建项目</title>
+	<link rel="stylesheet" href="dist/css/main.min.css" />
+	<link rel="stylesheet" href="dist/css/index.min.css" />
+	<script src="lib/sea.js"></script>
+	<script>
+		// seajs 的简单配置
+		seajs.config({
+		  base: "./src/js/"
+		});
+		
+		// 加载入口模块
+		seajs.use("./dist/js/index");
+	</script>
+</head>
+<body>
+	<div id="box">
+		<div class="pox">pox</div>
+	</div>
+</body>
+</html>
